@@ -2,13 +2,15 @@ def is_censored_char(input_string: str) -> bool:
 
     censored_chars = "PYTHON"
 
+    for string in input_string:
+        if string in censored_chars:
+            
     
-    input_string.replace(censored_chars,'X')
     
-    return input_string
+    return new_string
 
 
-is_censored_char('PsdXdsYdsthonTHON')
+print(is_censored_char('PsdXdsYdsthonTHON'))
 
 
 def censor_python(input_strs: list[str]) -> list[str]:
@@ -23,6 +25,6 @@ def censor_python(input_strs: list[str]) -> list[str]:
     return 
 
 
-print(censor_python(["python", "hello", "HELLO"]))
-print(censor_python(["abcdefg"]))
-print(censor_python([]))
+# print(censor_python(["python", "hello", "HELLO"]))
+# print(censor_python(["abcdefg"]))
+# print(censor_python([]))
